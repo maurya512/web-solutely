@@ -91,6 +91,36 @@ export const NavLinks = styled(LinkS)`
 
     // highlights the active link
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #DEE507;
     }
+`
+
+// styled components for nav button
+export const NavBtn = styled.div`
+display: flex;
+align-items: center;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
+`
+
+export const NavBtnLink = styled(LinkR)`
+border-radius: 50px;
+background: #DEE507;
+white-space: nowrap;
+padding: 10px 22px;
+color: #010606;
+font-size: 16px;
+outline: none;
+border: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+
+&:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
 `
