@@ -1,7 +1,8 @@
 import React from 'react'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
-const Navbar = () => {
+// pass in toggle function as a prop
+const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
@@ -9,7 +10,8 @@ const Navbar = () => {
                     <NavLogo to="/">
                         WebSolutely
                     </NavLogo>
-                    <MobileIcon>
+                    {/* pass in toggle function to onclick */}
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu >
