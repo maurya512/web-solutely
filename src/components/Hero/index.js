@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+// import { FaArrowRight } from 'react-icons/fa'
 // src file for the video
 import Video from '../../video/video.mp4'
 // import styled components from corresponding files
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward } from './HeroElements'
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
+import { Button } from '../ButtonElement'
+
 const Hero = () => {
 
     // useState to change the shapes on the button
@@ -28,9 +30,9 @@ const Hero = () => {
                 </HeroP>
                 <HeroBtnWrapper>
                     {/* will call the function when mouse hovers over on and off the button */}
-                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
                         {/* a button with changing arrow shapes when hovered over it */}
-                        Get Started {hover ? <ArrowForward /> : <FaArrowRight />}
+                        Get Started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
