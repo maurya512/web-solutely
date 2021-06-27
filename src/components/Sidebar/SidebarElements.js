@@ -7,7 +7,7 @@ import { Link as LinkR } from 'react-router-dom'
 // import { is } from '@babel/types'
 
 // styled components for the SidebarContainer 
-export const SidebarContainer = styled.div`
+export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -21,7 +21,7 @@ export const SidebarContainer = styled.div`
     // checks to see if the sidebar is open using ternary operators of sorts
     // checks for true or false
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen}) => (isOpen ? '0' : '-100%')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; 
 `
 
 // styled components for the close icon
@@ -59,7 +59,7 @@ color: #fff;
 cursor: pointer;
 
 &:hover {
-    color: #01bf71;
+    color: #DEE507;
     transition: 0.2s ease-in-out;
 }
 `
@@ -73,7 +73,7 @@ justify-content: center;
 // styled components for Sidebar Routes
 export const SidebarRoutes = styled(LinkR)`
 border-radius: 50px;
-background: #01bf71;
+background: #DEE507;
 white-space: nowrap;
 padding: 16px 64px;
 color: #010606;
