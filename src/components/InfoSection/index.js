@@ -30,7 +30,8 @@ const InfoSection = ({ lightBg, imgStart, topLine, lightText, headline, descript
                                     {description}
                                 </SubTitle>
                                 <BtnWrap>
-                                    <Button to="home" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                                    <Button to="home" smooth={true}
+                                        duration={500} spy={true} exac="true" offSet={-80} onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
                                         {buttonLabel}
                                     </Button>
                                 </BtnWrap>
