@@ -1,6 +1,7 @@
 // import images from images folder
 import pic1 from '../../images/pic1-1.svg'
 import pic2 from '../../images/pic2.svg'
+import pic3 from '../../images/pic3.svg'
 
 // a reusable component that can be used multiple times with different data files for each separate component
 export const homeObjOne = {
@@ -36,4 +37,21 @@ export const homeObjTwo = {
     dark: false,
     primary: false,
     darkText: true
+}
+
+// data for the third object
+export const homeObjThree = {
+    id: 'signup',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Connect With Us',
+    headline: 'Creating an account with is extremely easy',
+    description: 'Get everything set up and ready as early as the first call*.',
+    buttonLabel: 'Sign Up',
+    img: pic3,
+    alt: 'A person',
+    dark: true,
+    primary: true,
+    darkText: false
 }
