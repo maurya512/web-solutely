@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 // import styled components from InfoElement
 import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, SubTitle, BtnWrap, Img, ImgWrap, Column2 } from './InfoElements'
 import { Button } from '../ButtonElement'
 
-const InfoSection = ({ lightBg, imgStart, topLine, lightText, headline, description, darkText, buttonLabel, img, alt, id }) => {
+const InfoSection = ({ lightBg, imgStart, topLine, lightText, headline, description, darkText, buttonLabel, img, alt, id, primary, dark, dark2 }) => {
 
     // useState function to set hover functionality of the button
-    const [hover, setHover] = useState(false)
+    // const [hover, setHover] = useState(false)
 
-    const onHover = () => {
-        setHover(!hover)
-    }
+    // const onHover = () => {
+    //     setHover(!hover)
+    // }
 
     return (
         <>
@@ -31,7 +31,7 @@ const InfoSection = ({ lightBg, imgStart, topLine, lightText, headline, descript
                                 </SubTitle>
                                 <BtnWrap>
                                     <Button to="home" smooth={true}
-                                        duration={500} spy={true} exac="true" offSet={-80} onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                                        duration={500} spy={true} exact="true" offset={-80} primary={primary ? 1 : 0} dark={dark ? 1 : 0} dark2={dark2 ? 1 : 0}>
                                         {buttonLabel}
                                     </Button>
                                 </BtnWrap>
