@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import InfoSection from '../components/InfoSection'
 import { homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data'
 import Services from '../components/Services'
+import Footer from '../components/Footer'
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -32,6 +33,7 @@ const Home = () => {
             <Services />
             {/* sign up section */}
             <InfoSection {...homeObjFour} />
+            <Footer />
         </>
     )
 }
