@@ -41,21 +41,21 @@ export const homeObjTwo = {
 }
 
 // data for the third object
-export const homeObjThree = {
-    id: 'signup',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Connect With Us',
-    headline: 'Creating an account with is extremely easy',
-    description: 'Get everything set up and ready as early as the first call*.',
-    buttonLabel: 'Sign Up',
-    img: pic3,
-    alt: 'A person',
-    dark: true,
-    primary: true,
-    darkText: false
-}
+// export const homeObjThree = {
+//     id: 'signup',
+//     lightBg: false,
+//     lightText: true,
+//     lightTextDesc: true,
+//     topLine: 'Connect With Us',
+//     headline: 'Creating an account with is extremely easy',
+//     description: 'Get everything set up and ready as early as the first call*.',
+//     buttonLabel: 'Sign Up',
+//     img: pic3,
+//     alt: 'A person',
+//     dark: true,
+//     primary: true,
+//     darkText: false
+// }
 
 // data for sign up section
 export const homeObjFour = {

@@ -28,7 +28,7 @@ const Home = () => {
             {/* second data object */}
             <InfoSection {...homeObjTwo} />
             {/* third data object */}
-            <InfoSection {...homeObjThree} />
+            {/* <InfoSection {...homeObjThree} /> */}
             {/* Services Component */}
             <Services />
             {/* sign up section */}
