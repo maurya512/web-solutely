@@ -1,7 +1,8 @@
 import React from 'react'
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 // import styled components from their corresponding files
-import { FooterContainer, FooterWrap, FooterLinkItems, FooterLink, FooterLinkTitle, FooterLinksContainer, FooterLinksWrapper } from './FooterElement'
+import { FooterContainer, FooterWrap, FooterLinkItems, FooterLink, FooterLinkTitle, FooterLinksContainer, FooterLinksWrapper, SocialIconLink, SocialIcons, SocialLogo, SocialMediaWrap, SocialMediaIcons, WebsiteRights } from './FooterElement'
 const Footer = () => {
     return (
         <FooterContainer>
@@ -80,6 +81,29 @@ const Footer = () => {
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
+                {/* a designated footer area for social media icons */}
+                <SocialMediaIcons>
+                    <SocialMediaWrap>
+                        <SocialLogo to="/">
+                            WebSolutely
+                        </SocialLogo>
+                        <WebsiteRights>
+                            WebSolutely © {new Date().getFullYear()} All Rights Reserved
+                        </WebsiteRights>
+                        <SocialIcons>
+                            {/* _blank opens the link in a new tab. ideal for redirecting the users to a different page on a new tab */}
+                            <SocialIconLink href="//www.facebook.com/mauryap512" target="_blank" aria-label="Facebook">
+                                <FaFacebook />
+                            </SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                                <FaInstagram />
+                            </SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+                                <FaLinkedin />
+                            </SocialIconLink>
+                        </SocialIcons>
+                    </SocialMediaWrap>
+                </SocialMediaIcons>
             </FooterWrap>
         </FooterContainer>
     )

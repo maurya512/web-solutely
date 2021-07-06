@@ -1,6 +1,6 @@
 // styled components for the footer
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // styled components for Footercontainer
 export const FooterContainer = styled.footer`
@@ -64,6 +64,69 @@ color: #fff;
 text-decoration: none;
 margin-bottom: 0.5rem;
 font-size: 14px;
+
+&:hover {
+    color: #Dee507;
+    transition: 0.3s ease-out;
+}
+`
+
+// styled components for the social media icons
+export const SocialMediaIcons = styled.section`
+max-width: 1000px;
+width: 100%;
+`
+
+// styled components for socialmediawrap
+export const SocialMediaWrap = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1100px;
+margin: 40px auto 0 auto;
+
+@media screen and (max-width: 820px) {
+    flex-direction: column;
+}
+`
+
+// styled components for sociallogo 
+export const SocialLogo = styled(Link)`
+color: #fff;
+justify-self: start;
+cursor: pointer;
+text-decoration: none;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+margin-bottom: 16px;
+font-weight: bold;
+
+&:hover {
+    color: #Dee507;
+    transition: 0.3s ease-out;
+}
+`
+
+// styled components for websitelogo
+export const WebsiteRights = styled.small`
+color: #fff;
+margin-bottom: 16px;
+`
+
+// styled components for SocialIcons 
+export const SocialIcons = styled.div`
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 240px;
+
+`
+
+// styled components for SocialIconLink
+export const SocialIconLink = styled.a`
+color: #fff;
+font-size: 24px;
 
 &:hover {
     color: #Dee507;
