@@ -1,9 +1,15 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll/modules'
 
 // import styled components from their corresponding files
 import { FooterContainer, FooterWrap, FooterLinkItems, FooterLink, FooterLinkTitle, FooterLinksContainer, FooterLinksWrapper, SocialIconLink, SocialIcons, SocialLogo, SocialMediaWrap, SocialMediaIcons, WebsiteRights } from './FooterElement'
 const Footer = () => {
+
+    // a function to scroll to the top of the page
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
     return (
         <FooterContainer>
             <FooterWrap>
@@ -84,7 +90,7 @@ const Footer = () => {
                 {/* a designated footer area for social media icons */}
                 <SocialMediaIcons>
                     <SocialMediaWrap>
-                        <SocialLogo to="/">
+                        <SocialLogo to="/" onClick={toggleHome}>
                             WebSolutely
                         </SocialLogo>
                         <WebsiteRights>

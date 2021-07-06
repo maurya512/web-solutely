@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import { FaArrowRight } from 'react-icons/fa'
 // src file for the video
-import Video from '../../video/vid1.mp4'
+import Video from '../../video/newvid.mp4'
 // import styled components from corresponding files
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
 import { Button } from '../ButtonElement'

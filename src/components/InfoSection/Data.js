@@ -1,7 +1,6 @@
 // import images from images folder
 import pic1 from '../../images/pic1-1.svg'
 import pic8 from '../../images/pic8.svg'
-import pic3 from '../../images/pic3.svg'
 import pic7 from '../../images/pic7.svg'
 
 // a reusable component that can be used multiple times with different data files for each separate component
